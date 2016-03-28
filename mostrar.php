@@ -14,6 +14,15 @@ $nombre = $_POST['usuario'];// trea el usuario del html y lo guarda en un variab
 
 echo $nombre;
 
+if($nombre == "admin" && $_POST['password']== "1234")
+{
+		include_once"bienvenida.html";// llama al html
+}
+else
+{
+		include_once"NoLogeado.html";
+}
+
 
 
  ?>
